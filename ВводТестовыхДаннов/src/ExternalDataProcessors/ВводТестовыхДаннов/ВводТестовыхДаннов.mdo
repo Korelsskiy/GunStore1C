@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ExternalDataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="da23baa3-16f6-4673-9977-f3bd9fdea8b7">
+  <producedTypes>
+    <objectType typeId="d357e57a-9345-4222-a9f1-2b7f130af38e" valueTypeId="5ef9b46a-4daa-4d88-bb44-413fcbeab734"/>
+  </producedTypes>
+  <name>ВводТестовыхДаннов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ввод тестовых даннов</value>
+  </synonym>
+  <containedObjects classId="c3831ec8-d8d5-4f93-8a22-f9bfae07327f" objectId="569d3bea-c685-4681-b9c8-1a4db3e1118a"/>
+  <defaultForm>ExternalDataProcessor.ВводТестовыхДаннов.Form.Форма</defaultForm>
+  <attributes uuid="79bc742b-f3c4-4b13-a71c-2b8e9e18ee4f">
+    <name>ЧислоДобавляемыхКлиентов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Число добавляемых клиентов</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="3a87f29c-b491-4493-b400-2f290edda2e8">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="569101d6-f143-45c0-88df-77708b80ac91">
+    <name>СлучайныеФИО</name>
+    <synonym>
+      <key>ru</key>
+      <value>Случайные ФИО</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+</mdclass:ExternalDataProcessor>
