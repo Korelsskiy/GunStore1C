@@ -26,6 +26,22 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
+  <attributes uuid="e0aa067b-59bb-4b2b-a60b-b0c8cfcad65c">
+    <name>ЧислоДокументовПродажи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Число документов продажи</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
   <forms uuid="3a87f29c-b491-4493-b400-2f290edda2e8">
     <name>Форма</name>
     <synonym>
