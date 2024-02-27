@@ -164,10 +164,114 @@
     </extInfo>
   </items>
   <items xsi:type="form:FormGroup">
+    <name>ГруппаВыборСущностиДобавления</name>
+    <id>36</id>
+    <items xsi:type="form:FormField">
+      <name>ТипДобавления</name>
+      <id>33</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>ТипДобавления</segments>
+      </dataPath>
+      <handlers>
+        <event>OnChange</event>
+        <name>ТипДобавленияПриИзменении</name>
+      </handlers>
+      <extendedTooltip>
+        <name>ТипДобавленияРасширеннаяПодсказка</name>
+        <id>35</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ТипДобавленияКонтекстноеМеню</name>
+        <id>34</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>RadioButtonField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+        <radioButtonsType>RadioButtons</radioButtonsType>
+        <choiceList>
+          <presentation>
+            <key>ru</key>
+            <value>Клиент</value>
+          </presentation>
+          <value xsi:type="core:StringValue">
+            <value>Клиент</value>
+          </value>
+        </choiceList>
+        <choiceList>
+          <presentation>
+            <key>ru</key>
+            <value>Сотрудник</value>
+          </presentation>
+          <value xsi:type="core:StringValue">
+            <value>Сотрудник</value>
+          </value>
+        </choiceList>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Группа1</value>
+    </title>
+    <extendedTooltip>
+      <name>ГруппаВыборСущностиДобавленияРасширеннаяПодсказка</name>
+      <id>37</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>HorizontalIfPossible</group>
+      <behavior>Auto</behavior>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
     <name>ГруппаДобавитьКлиентов</name>
     <id>8</id>
     <items xsi:type="form:FormField">
-      <name>ЧислоДобавляемыхКлиентов</name>
+      <name>ЧислоДобавляемыхОбъектов</name>
       <id>5</id>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -175,10 +279,10 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Объект.ЧислоДобавляемыхКлиентов</segments>
+        <segments>Объект.ЧислоДобавляемыхОбъектов</segments>
       </dataPath>
       <extendedTooltip>
-        <name>ЧислоДобавляемыхКлиентовРасширеннаяПодсказка</name>
+        <name>ЧислоДобавляемыхОбъектовРасширеннаяПодсказка</name>
         <id>7</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -193,7 +297,7 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ЧислоДобавляемыхКлиентовКонтекстноеМеню</name>
+        <name>ЧислоДобавляемыхОбъектовКонтекстноеМеню</name>
         <id>6</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -217,7 +321,7 @@
       </extInfo>
     </items>
     <items xsi:type="form:Button">
-      <name>ДобавитьКлиентов</name>
+      <name>ДобавитьСущности</name>
       <id>1</id>
       <title>
         <key>ru</key>
@@ -229,7 +333,7 @@
         <common>true</common>
       </userVisible>
       <extendedTooltip>
-        <name>ДобавитьКлиентовРасширеннаяПодсказка</name>
+        <name>ДобавитьСущностиРасширеннаяПодсказка</name>
         <id>2</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -244,7 +348,7 @@
         </extInfo>
       </extendedTooltip>
       <type>UsualButton</type>
-      <commandName>Form.Command.ДобавитьКлиентов</commandName>
+      <commandName>Form.Command.ДобавитьСущности</commandName>
       <representation>Auto</representation>
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
@@ -333,11 +437,77 @@
       </backColor>
     </extInfo>
   </items>
+  <items xsi:type="form:FormField">
+    <name>ТипУдаления</name>
+    <id>38</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>ТипУдаления</segments>
+    </dataPath>
+    <handlers>
+      <event>OnChange</event>
+      <name>ТипУдаленияПриИзменении</name>
+    </handlers>
+    <extendedTooltip>
+      <name>ТипУдаленияРасширеннаяПодсказка</name>
+      <id>40</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>ТипУдаленияКонтекстноеМеню</name>
+      <id>39</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>RadioButtonField</type>
+    <editMode>Enter</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+      <choiceList>
+        <presentation>
+          <key>ru</key>
+          <value>Клиент</value>
+        </presentation>
+        <value xsi:type="core:StringValue">
+          <value>Клиент</value>
+        </value>
+      </choiceList>
+      <choiceList>
+        <presentation>
+          <key>ru</key>
+          <value>Сотрудник</value>
+        </presentation>
+        <value xsi:type="core:StringValue">
+          <value>Сотрудник</value>
+        </value>
+      </choiceList>
+    </extInfo>
+  </items>
   <items xsi:type="form:FormGroup">
     <name>Удаление</name>
     <id>23</id>
     <items xsi:type="form:Button">
-      <name>УдалитьВсехКлиентов</name>
+      <name>УдалитьВсеСущности</name>
       <id>3</id>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -345,7 +515,7 @@
         <common>true</common>
       </userVisible>
       <extendedTooltip>
-        <name>УдалитьВсехКлиентовРасширеннаяПодсказка</name>
+        <name>УдалитьВсеСущностиРасширеннаяПодсказка</name>
         <id>4</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -360,7 +530,7 @@
         </extInfo>
       </extendedTooltip>
       <type>UsualButton</type>
-      <commandName>Form.Command.УдалитьВсехКлиентов</commandName>
+      <commandName>Form.Command.УдалитьВсеСущности</commandName>
       <representation>Auto</representation>
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
@@ -459,6 +629,10 @@
     </userVisible>
     <horizontalAlign>Left</horizontalAlign>
   </autoCommandBar>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>ПриСозданииНаСервере</name>
+  </handlers>
   <saveWindowSettings>true</saveWindowSettings>
   <autoTitle>true</autoTitle>
   <autoUrl>true</autoUrl>
@@ -484,8 +658,48 @@
     </edit>
     <main>true</main>
   </attributes>
+  <attributes>
+    <name>ТипДобавления</name>
+    <title>
+      <key>ru</key>
+      <value>Тип добавления</value>
+    </title>
+    <id>2</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers>
+        <length>25</length>
+      </stringQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ТипУдаления</name>
+    <title>
+      <key>ru</key>
+      <value>Тип удаления</value>
+    </title>
+    <id>3</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers>
+        <length>25</length>
+      </stringQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
   <formCommands>
-    <name>ДобавитьКлиентов</name>
+    <name>ДобавитьСущности</name>
     <title>
       <key>ru</key>
       <value>Добавить 100 клиентов</value>
@@ -496,16 +710,16 @@
     </use>
     <action xsi:type="form:FormCommandHandlerContainer">
       <handler>
-        <name>ДобавитьКлиентов</name>
+        <name>ДобавитьСущности</name>
       </handler>
     </action>
     <currentRowUse>Auto</currentRowUse>
   </formCommands>
   <formCommands>
-    <name>УдалитьВсехКлиентов</name>
+    <name>УдалитьВсеСущности</name>
     <title>
       <key>ru</key>
-      <value>Удалить всех клиентов</value>
+      <value>Удалить все сущности</value>
     </title>
     <id>2</id>
     <use>
@@ -513,7 +727,7 @@
     </use>
     <action xsi:type="form:FormCommandHandlerContainer">
       <handler>
-        <name>УдалитьВсехКлиентов</name>
+        <name>УдалитьВсеСущности</name>
       </handler>
     </action>
     <currentRowUse>Auto</currentRowUse>

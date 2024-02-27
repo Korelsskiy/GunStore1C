@@ -11,10 +11,10 @@
   <containedObjects classId="c3831ec8-d8d5-4f93-8a22-f9bfae07327f" objectId="569d3bea-c685-4681-b9c8-1a4db3e1118a"/>
   <defaultForm>ExternalDataProcessor.ВводТестовыхДаннов.Form.Форма</defaultForm>
   <attributes uuid="79bc742b-f3c4-4b13-a71c-2b8e9e18ee4f">
-    <name>ЧислоДобавляемыхКлиентов</name>
+    <name>ЧислоДобавляемыхОбъектов</name>
     <synonym>
       <key>ru</key>
-      <value>Число добавляемых клиентов</value>
+      <value>Число добавляемых объектов</value>
     </synonym>
     <type>
       <types>Number</types>
