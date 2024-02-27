@@ -71,4 +71,13 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
+  <forms uuid="d602467e-1a97-4e92-afb0-24551cf9b46f">
+    <name>ФормаСпискаНоменклатурыПоКлиенту</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка номенклатуры по клиенту</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
 </mdclass:Catalog>

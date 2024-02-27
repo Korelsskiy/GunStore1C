@@ -18,6 +18,10 @@
   <createOnInput>Use</createOnInput>
   <dataLockControlMode>Managed</dataLockControlMode>
   <fullTextSearch>Use</fullTextSearch>
+  <listPresentation>
+    <key>ru</key>
+    <value>Продажи</value>
+  </listPresentation>
   <numberType>String</numberType>
   <numberLength>9</numberLength>
   <numberAllowedLength>Variable</numberAllowedLength>
@@ -87,20 +91,29 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="b275a346-bfd3-487f-a506-72f83c80ac97">
-    <name>ФормаСписка</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма списка</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="7c35069c-d281-4393-987e-4c195b78e1e1">
     <name>ФормаСпискаОсновная</name>
     <synonym>
       <key>ru</key>
       <value>Форма списка основная</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ef83c8fe-c310-46b6-9002-c56f816d1915">
+    <name>ФормаСпискаДокументовПоКлиенту</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка документов по клиенту</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c76c39c1-627d-4a42-9f11-e07e16aa8bab">
+    <name>ФормаСпискаДокументовПоНоменклатуре</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка документов по номенклатуре</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>

@@ -49,7 +49,6 @@
   <reports>Report.ПрибыльКомпании</reports>
   <reports>Report.ПродажиКоличествоПоКлиентам</reports>
   <reports>Report.ПродажиКоличествоПоНоменклатуре</reports>
-  <reports>Report.ПродажиЧеки</reports>
   <informationRegisters>InformationRegister.ЦеныНоменклатуры</informationRegisters>
   <accumulationRegisters>AccumulationRegister.Продажи</accumulationRegisters>
 </mdclass:Configuration>
